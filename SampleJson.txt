@@ -1,0 +1,6 @@
+Mark	DEV	80	2
+Mark	QA	50	1
+Mark	DB	10	3
+John	DEV	80	5
+John	QA	30	7
+John	DB	90	6
