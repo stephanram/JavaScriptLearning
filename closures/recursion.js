@@ -24,7 +24,7 @@ var makeTree = function (categories, parent) {
 var makeTreeSimplified = (categories, parent) => {
     var simplifiedNode = {};
     categories.filter(c => c.parent === parent)
-        .forEach(c => simplifiedNode[c.id] = makeTreeSimplified(categories, c.id));
+        .forEach((c) => simplifiedNode[c.id] = makeTreeSimplified(categories, c.id));
 
     return simplifiedNode;
 }

@@ -9,7 +9,7 @@
 </body>
 <script>
 
-    /*
+    
     function showHelp(help) {
         document.getElementById('help').innerHTML = help;
     }
@@ -23,14 +23,15 @@
 
         for (var i = 0; i < helpText.length; i++) {
             var item = helpText[i];
-            document.getElementById(item.id).onfocus = function () {
+            document.getElementById(item.id).onfocus = function (e, helpText[i].help) {
                 showHelp(item.help);
             }
         }
     }
-    */
+    
+    
 
-    function showHelp(help) {
+    /*function showHelp(help) {
         document.getElementById('help').innerHTML = help;
     }
 
@@ -52,6 +53,8 @@
             document.getElementById(item.id).onfocus = makeHelpCallback(item.help);
         }
     }
+    */
+    
 
     setupHelp();
 </script>
